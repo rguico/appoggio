@@ -1,2 +1,11 @@
 plugins:
   - angular
+rules:
+  quotes:
+    - 1
+    - single
+  no-use-before-define:
+    - 1
+    - nofunc
+globals:
+  angular: false
