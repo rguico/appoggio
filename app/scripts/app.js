@@ -14,7 +14,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'angularSoap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -25,6 +26,11 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/testSoap', {
+        templateUrl: 'views/apiSetupBar.html',
+        controller: 'ApiBarController',
+        controllerAs: 'apiBarCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -20,23 +20,6 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header" style="margin: 10px 0; padding-bottom: 10px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-offset-6 centered">
-            <button class="btn btn-primary">New API</button>
-            <button class="btn btn-primary">Edit API</button>
-            <button class="btn btn-danger">Delete API</button>
-          </div>
-          <div class="col-sm-6">
-            <select name="api" id="api" class="form-control">
-              <option value="">-- Select one --</option>
-              <option value="oa">Opera Australia</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="container">
     <div ng-view=""></div>
@@ -80,6 +63,8 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="components/apisetup/apiBarController.js"></script>
+        <script src="components/apisetup/apiSetupService.js"></script>
         <!-- endbuild -->
 </body>
 </html>
